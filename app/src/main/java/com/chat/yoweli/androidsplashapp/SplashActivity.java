@@ -21,8 +21,11 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 Intent mainIntent = new Intent(SplashActivity.this, MainActivity.class);
                 startActivity(mainIntent);
+
+                // close this activity
+                finish();
+
             }
         }, SPLASH_TIME_OUT);
-
     }
 }
